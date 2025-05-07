@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Reveal.js Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Core styles -->
+  <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/white.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+        <section>
+            <h3>Automating Ping Identity Deployments</h3>
+            <h4>A Unified DevOps Framework</h4>
+            <p>This is a simple presentation using Reveal.js.</p>
+        </section>
+    
+        <section>
+            <h2>Slide 2</h2>
+            <p>Here is some more content.</p>
+        </section>
+    
+        <section>
+            <h2>Slide 3</h2>
+            <p>And here is the final slide.</p>
+        </section>
+        <section
+        data-markdown="/sildes/01-title.md"
+        data-separator="^---$"
+        data-separator-vertical="^--$"
+        data-separator-notes="^Note:"
+        data-charset="utf-8">
+      </section>
+    </div>
+  </div>
+
+  <!-- Core script -->
+  <script src="node_modules/reveal.js/dist/reveal.js"></script>
+  <script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+  <script>
+    Reveal.initialize({ hash: true, plugins: [RevealMarkdown] });
+  </script>
+</body>
+</html>

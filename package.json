@@ -1,0 +1,25 @@
+{
+  "name": "demo_sides",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "http-server -c-1 ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reecem22/demo_sides.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reecem22/demo_sides/issues"
+  },
+  "homepage": "https://github.com/reecem22/demo_sides#readme",
+  "description": "",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "reveal.js": "^5.2.1"
+  }
+}
