@@ -1,47 +1,148 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Reveal.js Demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <title>tidy-revealjs demo</title>
+    <meta
+      name="description"
+      content="A custom theme and build system for reveal.js"
+    />
+    <meta name="author" content="Julie Ng" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Core styles -->
-  <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
-  <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/white.css" id="theme">
-</head>
-<body>
-  <div class="reveal">
-    <div class="slides">
-        <section>
-            <h3>Automating Ping Identity Deployments</h3>
-            <h4>A Unified DevOps Framework</h4>
-            <p>This is a simple presentation using Reveal.js.</p>
+    <link rel="stylesheet" href="assets/vendor/revealjs/css/reset.css" />
+    <link rel="stylesheet" href="assets/vendor/revealjs/css/reveal.css" />
+    <!-- Core styles -->
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="/assets/css/dracula.css" />
+
+    <!-- Tidy Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <img src="./images/image1.png" alt="Logo" class="logo" />
+
+      <div class="slides">
+        <section
+          data
+          data-background-image="./images/image3.jpg"
+          class="section-title"
+        >
+          <div class="cover-text">
+            <h1>Ping Identity Accelerator DEMO</h1>
+            <ul>
+              <li>Platform Enginneering</li>
+              <li>Created by Reece M</li>
+            </ul>
+          </div>
+
+          <img src="./images/image4.png" alt="Decorative" class="bottom-left" />
         </section>
-    
         <section>
-            <h2>Slide 2</h2>
-            <p>Here is some more content.</p>
-        </section>
-    
-        <section>
-            <h2>Slide 3</h2>
-            <p>And here is the final slide.</p>
+          <h1>Demo infrastrucure</h1>
+          <h2>Examples of more complex layouts and styles</h2>
+		  <img src="./images/diagram-export-08-05-2025-5_07_41-pm.png"  />
         </section>
         <section
-        data-markdown="/sildes/01-title.md"
-        data-separator="^---$"
-        data-separator-vertical="^--$"
-        data-separator-notes="^Note:"
-        data-charset="utf-8">
-      </section>
-    </div>
-  </div>
+          data-markdown="slides/1.md"
+          data-separator-notes="^Note:"
+        ></section>
 
-  <!-- Core script -->
-  <script src="node_modules/reveal.js/dist/reveal.js"></script>
-  <script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
-  <script>
-    Reveal.initialize({ hash: true, plugins: [RevealMarkdown] });
-  </script>
-</body>
+        <section
+          data-markdown="slides/2.md"
+          data-separator-notes="^Note:"
+        ></section>
+
+        <section>
+          <section
+            class="section-title"
+            data-background-image="./images/example-stil-vdaJJbls3xE-unsplash.jpg"
+          >
+            <span class="section-number">1</span>
+            <h1>Theme: Basic Styles</h1>
+            <h2>Simple slides with just markdown</h2>
+          </section>
+          <section
+            data-markdown="slides/basics/bulleted-lists.md"
+            data-separator-notes="^Note:"
+          ></section>
+          <section
+            data-markdown="slides/basics/ordered-lists.md"
+            data-separator-notes="^Note:"
+          ></section>
+          <section
+            data-markdown="slides/basics/tables.md"
+            data-separator-notes="^Note:"
+          ></section>
+        </section>
+        <section>
+          <section
+            class="section-title"
+            data-background-image="./images/example-minh-pham-lB9ylP8e9Sg-unsplash.jpg"
+          >
+            <span class="section-number">2</span>
+            <h1>Theme: Presentation Layouts</h1>
+            <h2>Examples of more complex layouts and styles</h2>
+          </section>
+          <section
+            data-markdown="slides/presentations/10-example-data.md"
+            data-separator-notes="^Note:"
+          ></section>
+          <section class="section-conclusion center">
+            <p>Conclusion #1</p>
+            <h1>Example Conclusion</h1>
+            <h2>A longer subheadline</h2>
+          </section>
+          <section class="slide-quote">
+            <h1>Example Quote</h1>
+            <blockquote>
+              <p>
+                Conway's Law: Organizations which design systems... are
+                constrained to produce designs which are
+                <strong>copies</strong> of the communication structures of these
+                organizations.
+              </p>
+              <cite
+                >- Melvin Conway, "How Do Committees Invent?” Datamation (April
+                1968).</cite
+              >
+            </blockquote>
+            <aside class="notes">
+              <ul>
+                - Must be HTML - because markdown does not support &lt;cite&gt;
+                tag
+              </ul>
+            </aside>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <!-- Core script -->
+    <script src="node_modules/reveal.js/dist/reveal.js"></script>
+    <script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="node_modules/reveal.js/plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: false,
+        hash: true,
+        history: true,
+        width: 1280,
+        height: 720,
+        margin: 0.1,
+        transition: "slide",
+        plugins: [RevealMarkdown, RevealHighlight],
+      });
+    </script>
+  </body>
 </html>

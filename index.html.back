@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Reveal.js Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Core styles -->
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/reveal.js/dist/theme/white.css"
+      id="theme"
+    />
+    <link rel="stylesheet" href="./custom.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <img src="./media/image1.png" alt="Logo" class="logo" />
+
+      <div class="slides">
+        <section data data-background-image="./media/image3.jpg">
+          <div class="cover-text">
+            <h4>Automating Ping Identity Deployments</h4>
+            <h5>A Unified DevOps Framework</h5>
+            <p>Platform Enginneering</p>
+          </div>
+
+          <img src="./media/image4.png" alt="Decorative" class="bottom-left" />
+        </section>
+
+        <section>
+          <h4>Pain Points</h4>
+
+          <ul class="list-points">
+            <li class="fragment">
+              <strong
+                >Repetitive Manual CI/CD:</strong
+              ><span>
+                Each customer requires hand-crafted CI/CD pipelines and variable
+                definitions, leading to copy-paste errors and wasted
+                effort.</span
+              >
+            </li>
+            <li class="fragment">
+              <strong
+                >Inconsistent Security Practices:</strong
+              ><span>
+                Secrets get scattered—some teams check keys into Git, others use
+                ad-hoc scripts—making audits and governance almost
+                impossible</span
+              >
+            </li>
+            <li class="fragment">
+              <strong
+                >Slow Onboarding & Delivery</strong
+              ><span">
+                Weeks spent building and validating bespoke pipelines delay business value and frustrate customers.</span
+              >
+            </li>
+            <li class="fragment">
+              <strong
+                >Knowledge Silos</strong
+              ><span>
+                Lessons learned on one engagement aren’t automatically shared, forcing every team to rediscover best practices.</span
+              >
+            </li>
+
+          <!-- <p class="fragment">Fade in</p>
+          <p class="fragment fade-out">Fade out</p>
+          <p class="fragment highlight-red">Highlight red</p>
+          <p class="fragment fade-in-then-out">Fade in, then out</p>
+          <p class="fragment fade-up">Slide up while fading in</p> -->
+        </section>
+
+        <section class="slide">
+          <h4>Our Automation Solution</h4>
+          <ul>
+            <li><strong>SaaS Accelerator:</strong> A Ping AIC configuration management bootstrap module that auto‐generates CI/CD pipeline files.</li>
+            <li><strong>Multi-Platform Support:</strong> Out-of-the-box templates for GitLab, GitHub, Azure DevOps, and more.</li>
+            <li><strong>Template-Driven:</strong> Pre-configured pipelines you can use immediately or customise to customer needs.</li>
+            <li><strong>Streamlined Delivery:</strong> Eliminates manual pipeline authoring—accelerates system integration for new customers.</li>
+            <li><strong>Agency Empowerment:</strong> Provides comprehensive templates so DevOps teams can build efficiently on Day 1.</li>
+            <li><strong>Config-Only Focus:</strong> Manages only AIC tenant configuration; infrastructure remains under vendor control.</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Ping Accelerator Demo</h4>
+        </section>
+        <section
+        >
+        <h4>demo infrastructure</h4>
+        <img class="diagram" src="./media/diagram.png" />
+      </section>
+      </div>
+    </div>
+
+    <!-- Core script -->
+    <script src="node_modules/reveal.js/dist/reveal.js"></script>
+    <script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+    <script>
+      Reveal.initialize({ hash: true, plugins: [RevealMarkdown] });
+    </script>
+  </body>
+</html>
